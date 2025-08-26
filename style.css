@@ -1,0 +1,37 @@
+.logo-container {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 10px;
+}
+
+.logo-track {
+  display: inline-flex;
+  gap:5px;
+  white-space: nowrap;
+  animation: scroll-logos 10s linear infinite;
+}
+
+/* logos style */
+.logo-track img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+/* Animation: move left slowly, then pause */
+@keyframes scroll-logos {
+  0%   { transform: translateX(0); }
+  70%  { transform: translateX(-600px); } /* move left */
+  100% { transform: translateX(-600px); } /* pause 3s */
+}
+
+/* Hover: pause whole track */
+.logo-container:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* Extra: hover on logo makes it zoom */
+.logo-track img:hover {
+  transform: scale(1.2);
+}

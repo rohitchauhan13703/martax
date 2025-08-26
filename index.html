@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martex Pricing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Navbar -->
+  <header class="bg-gray-50 sticky top-0 z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="11.png" />
+        
+        
+    
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex space-x-8 font-medium relative">
+        
+        <!-- Company Dropdown -->
+        <div class="group relative">
+          <button class="hover:text-blue-600 flex items-center space-x-1">
+            <span>Company</span>
+            <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-48 mt-2 border border-gray-200">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-50">About Us</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-50 flex justify-between">
+              <span>Careers</span>
+              <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">4</span>
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-50">Customers</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-50">Our Blog</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-50">Contact Us</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-blue-600">Case Studies</a>
+        <a href="#" class="hover:text-blue-600">Pricing</a>
+        <a href="#" class="hover:text-blue-600">FAQs</a>
+        <a href="#" class="hover:text-blue-600">Sign In</a>
+      </nav>
+
+      <!-- Get Started -->
+      <div>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold">Simple, Flexible Pricing</h1>
+
+    <!-- Billing Toggle -->
+    <div class="flex justify-center items-center space-x-3 mt-6">
+      <span class="text-gray-700 font-medium">Billed monthly</span>
+      <label class="inline-flex relative items-center cursor-pointer">
+        <input type="checkbox" id="billing-toggle" class="sr-only peer">
+        <div class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+      </label>
+      <span class="text-gray-700 font-medium">Billed yearly</span>
+    </div>
+    <p class="text-blue-600 mt-2">Save up to 35% with yearly billing</p>
+  </section>
+
+</body>
+</html>
+
+  <!-- Pricing Cards -->
+  <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-20">
+
+    <!-- Starter -->
+    <div class="bg-white rounded-2xl shadow p-8 text-center">
+      <h3 class="text-xl font-semibold mb-4">Starter</h3>
+      <p class="text-5xl font-bold">$0<span class="text-lg font-normal">/forever</span></p>
+      <p class="text-gray-500 mb-6">For professionals just starting out.</p>
+      <button class="w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700">Get Started Free</button>
+      <p class="text-sm text-gray-400 mt-2">No credit card required</p>
+      <ul class="mt-6 space-y-3 text-left text-gray-700">
+        <li>✔ 2 Free Projects</li>
+        <li>✔ 1GB Storage</li>
+        <li>✔ Weekly Backup</li>
+        <li>✔ No Ads or Trackers</li>
+        <li>✔ 12/5 Email Support</li>
+      </ul>
+    </div>
+
+    <!-- Basic -->
+    <div class="bg-white rounded-2xl shadow-xl p-8 text-center border-2 border-indigo-600 relative">
+      <span class="absolute top-0 right-0 bg-indigo-600 text-white text-xs px-3 py-1 rounded-bl-lg rounded-tr-lg">Most Popular</span>
+      <h3 class="text-xl font-semibold mb-4">Basic</h3>
+      <p id="basicPrice" class="text-5xl font-bold">$16.99<span class="text-lg font-normal">/mo</span></p>
+      <p class="text-gray-500 mb-6">For small teams with simple workflows.</p>
+      <button class="w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700">Start 14-Day Trial</button>
+      <p class="text-sm text-gray-400 mt-2">7-Day Money Back Guarantee</p>
+      <ul class="mt-6 space-y-3 text-left text-gray-700">
+        <li>✔ Up to 250 Projects</li>
+        <li>✔ 15GB Storage</li>
+        <li>✔ Team Workspace</li>
+        <li>✔ Daily Backup</li>
+        <li>✔ No Ads or Trackers</li>
+        <li>✔ 12/7 Email Support</li>
+      </ul>
+    </div>
+
+    <!-- Advanced -->
+    <div class="bg-white rounded-2xl shadow p-8 text-center">
+      <h3 class="text-xl font-semibold mb-4">Advanced</h3>
+      <p id="advancedPrice" class="text-5xl font-bold">$24.99<span class="text-lg font-normal">/mo</span></p>
+      <p class="text-gray-500 mb-6">For growing teams needing flexibility.</p>
+      <button class="w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700">Upgrade Plan</button>
+      <p class="text-sm text-gray-400 mt-2">7-Day Money Back Guarantee</p>
+      <ul class="mt-6 space-y-3 text-left text-gray-700">
+        <li>✔ Everything in Basic</li>
+        <li>✔ Private Cloud Hosting</li>
+        <li>✔ Custom Security</li>
+        <li>✔ Advanced Permissions</li>
+        <li>✔ Multi-Team Management</li>
+        <li>✔ 24/7 Priority Support</li>
+      </ul>
+    </div>
+
+  </section>
+
+
+
+  
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Trusted Companies</h2><br>
+  <div class="ticker" aria-label="Scrolling images">
+    <div class="track">
+
+
+<div class="logo-container">
+  <div class="logo-track">
+    <img src="1.png" alt="Company 1">
+    <img src="2.png" alt="Company 2">
+    <img src="3.png" alt="Company 3">
+    <img src="4.png" alt="Company 4">
+    <img src="5.png" alt="Company 5">
+    <img src="6.png" alt="Company 6">
+    <img src="7.png" alt="Company 7">
+    <img src="8.png" alt="Company 8">
+    <img src="9.png" alt="Company 9">
+    <img src="10.png" alt="Company 10">
+    <img src="12.png" alt="Company 12">
+    <img src="13.png" alt="Company 13">
+    <img src="14.png" alt="Company 14">
+    <img src="15.png" alt="Company 15">
+    <img src="16.png" alt="Company 16">
+    <img src="17.png" alt="Company 17">
+  </div>
+</div>
+
+<style>
+.logo-container {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 10px;
+}
+
+.logo-track {
+  display: inline-flex;
+  gap:5px;
+  white-space: nowrap;
+  animation: scroll-logos 10s linear infinite;
+}
+
+/* logos style */
+.logo-track img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+/* Animation: move left slowly, then pause */
+@keyframes scroll-logos {
+  0%   { transform: translateX(0); }
+  70%  { transform: translateX(-600px); } /* move left */
+  100% { transform: translateX(-600px); } /* pause 3s */
+}
+
+/* Hover: pause whole track */
+.logo-container:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* Extra: hover on logo makes it zoom */
+.logo-track img:hover {
+  transform: scale(1.2);
+}
+</style>
+
+
+
+  <!-- Comparison Table -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Title -->
+      <h2 class="text-5xl sm:text-4xl font-bold text-gray-800 mb-4">
+       Compare Our Plans
+      </h2>
+      <!-- Subtitle -->
+      <p class="text-lg text-gray-500">
+      Complete list of features available in our pricing plans
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <title>Pricing Comparison</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <div class="max-w-6xl mx-auto p-6">
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr class="border-b">
+            <th class="text-left py-3 px-4"></th>
+            <th class="text-center py-3 px-4 font-semibold">Starter</th>
+            <th class="text-center py-3 px-4 font-semibold">Basic</th>
+            <th class="text-center py-3 px-4 font-semibold">Premium</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr>
+            <td class="py-3 px-4">Available Projects</td>
+            <td class="text-center">Up to 2</td>
+            <td class="text-center">Up to 250</td>
+            <td class="text-center">Unlimited</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Available Storage</td>
+            <td class="text-center">2Gb</td>
+            <td class="text-center">50Gb</td>
+            <td class="text-center">350Gb</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Private Cloud Hosting</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">User Permissions</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Direct Integrations</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Reusable Components</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Data Backup</td>
+            <td class="text-center">Weekly</td>
+            <td class="text-center">Daily</td>
+            <td class="text-center">Daily</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">No Ads. No Trackers</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Advanced Security</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Shared Team Workspace</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Team Management</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-gray-400">✕</td>
+            <td class="text-center text-blue-600">✔</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
+<!--end-->
+
+<!-- Payment Section -->
+<div class="container mx-auto px-6 py-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+    <!-- Accepted Payment Methods -->
+    <div>
+      <h6 class="text-lg font-bold mb-4">Accepted Payment Methods</h6>
+      <div class="flex flex-wrap justify-center md:justify-start gap-4">
+        <img src="visa.png" alt="Visa" class="h-8">
+        <img src="am.png" alt="American Express" class="h-8">
+        <img src="discover.png" alt="Discover" class="h-8">
+        <img src="paypal.png" alt="PayPal" class="h-8">
+        <img src="jcb.png" alt="JCB" class="h-8">
+      
+      </div>
+    </div>
+
+    <!-- Money Back Guarantee -->
+    <div>
+      <h6 class="text-lg font-bold mb-4">Money Back Guarantee</h6>
+      <p class="text-gray-600">
+        Explore Martex Premium for 14 days. If it’s not a perfect fit, receive a full refund.
+      </p>
+    </div>
+
+    <!-- SSL Encrypted Payment -->
+    <div>
+      <h6 class="text-lg font-bold mb-4">SSL Encrypted Payment</h6>
+      <p class="text-gray-600">
+        Your information is protected by 256-bit SSL encryption.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+                         
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- FAQ Section -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+        Questions & Answers
+      </h2>
+      <p class="mt-4 text-gray-500 text-lg">
+        Ligula risus auctor tempus magna feugiat lacinia.
+      </p>
+    </div>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <!-- FAQ Grid -->
+  <div class="mt-16 grid md:grid-cols-2 gap-12 max-w-6xl mx-auto px-6">
+    
+    <!-- Item 1 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        1. Getting started with Martex
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Etiam amet mauris suscipit in odio integer congue metus and vitae arcu mollis blandit
+        ultrice ligula egestas magna suscipit lectus magna suscipit luctus blandit and laoreet
+      </p>
+    </div>
+
+    <!-- Item 2 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        4. Discounts for annual plans
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus dolor luctus.
+        An enim nullam tempor sapien gravida donec congue metus. Vitae arcu mollis blandit integer nemo volute velna.
+      </p>
+    </div>
+
+    <!-- Item 3 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        2. How do I choose a plan?
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at velna vitae auctor integer congue undo magna laoreet augue pretium purus pretium ligula.
+      </p>
+    </div>
+
+    <!-- Item 4 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        5. How to request a refund?
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec neque blandit justo aliquam molestie nunc sapien justo.
+      </p>
+    </div>
+
+    <!-- Item 5 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        3. Do I need a credit card to sign up?
+      </h3>
+      <ul class="text-gray-600 leading-relaxed list-disc pl-5">
+        <li>Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium purus rutrum tempor sapien.</li>
+        <li>Nemo ipsam egestas volute undo turpis purus lipsum primis aliquam sapien quaerat sodales pretium a purus.</li>
+      </ul>
+    </div>
+
+    <!-- Item 6 -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        6. Can I cancel at anytime?
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at velna vitae auctor integer congue undo magna laoreet augue pretium purus pretium ligula.
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA Button Section -->
+  <div class="mt-16 container mx-auto flex items-center justify-center">
+    <div class="bg-gray-100 px-8 py-4 rounded-full shadow text-gray-700 text-lg text-center">
+      Have any questions? 
+      <a href="#" class="text-blue-600 font-semibold hover:underline">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+<br>
+<br>
+
+
+<!---end button----->
+
+<!--image-->
+
+<style>
+  .bg-container {
+    background-image: url('bg-05.jpg'); /* Use your uploaded image */
+ height: 300px;
+    width: 150%;
+    margin-right: 50px;
+  }
+</style>
+</head>
+<body class="h-screen flex justify-center items-center">
+
+  <!-- Main Container with Background + Left/Right Gap -->
+  <div class="bg-container rounded-2xl shadow-lg p-10 mx-6 md:mx-20 w-full max-w-5xl">
+    <!-- Inner Wrapper Div -->
+    <div class="flex justify-center items-center h-full">
+      <div id="cta-container" class="w-full flex justify-center"></div>
+    </div>
+  </div>
+
+  <script>
+    // Create CTA section dynamically
+    const ctaSection = document.createElement("section");
+    ctaSection.className =
+      "text-white text-center max-w-2xl w-full"; // ✅ stays in center
+
+    // Heading
+    const heading = document.createElement("h2");
+    heading.className = "text-3xl md:text-4xl font-bold mb-4";
+    heading.textContent = "Give it a try, it's free!";
+    ctaSection.appendChild(heading);
+
+    // Subtext
+    const subText = document.createElement("p");
+    subText.className = "text-lg mb-6";
+    subText.textContent = "It only takes a few clicks to get started";
+    ctaSection.appendChild(subText);
+
+    // Button
+    const button = document.createElement("a");
+    button.href = "#";
+    button.className =
+      "bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition";
+    button.textContent = "Get started - it's free";
+    ctaSection.appendChild(button);
+
+    // Note
+    const note = document.createElement("p");
+    note.className = "text-sm text-gray-200 mt-4";
+    note.textContent = "✔ Free for 14 days, no credit card required.";
+    ctaSection.appendChild(note);
+
+    // Inject CTA into container
+    document.getElementById("cta-container").appendChild(ctaSection);
+  </script>
+</body>
+</html>
+<br>
+
+<!---end-->
+
+
+<!--last -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 300px;
+      width: 100%;
+    }
+
+    .footer {
+    
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 20px 0;
+    }
+
+    .footer-column h4 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 8px 0;
+    }
+
+    .footer-column ul li a {
+      color: #5f6c7b;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #ddd;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      color: #5f6c7b;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .social-icons a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-column">
+      <div class="footer-logo">
+        <img src="11.png" alt="Martex Logo">
+        
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Our Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Integration</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Connect With Us</h4>
+      <p><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+      <div class="social-icons">
+        
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p>© 2025 Martex. All Rights Reserved</p>
+   <p>Made with <span style="color: red;">❤️</span> by <a href="#">@elite-themes24</a></p>
+  </div>
+
+</body>
+</html>

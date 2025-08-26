@@ -1,0 +1,57 @@
+<style>
+  .bg-container {
+    background-image: url('bg-05.jpg'); /* Use your uploaded image */
+ height: 300px;
+    width: 150%;
+    margin-right: 50px;
+  }
+</style>
+</head>
+<body class="h-screen flex justify-center items-center">
+
+  <!-- Main Container with Background + Left/Right Gap -->
+  <div class="bg-container rounded-2xl shadow-lg p-10 mx-6 md:mx-20 w-full max-w-5xl">
+    <!-- Inner Wrapper Div -->
+    <div class="flex justify-center items-center h-full">
+      <div id="cta-container" class="w-full flex justify-center"></div>
+    </div>
+  </div>
+
+  <script>
+    // Create CTA section dynamically
+    const ctaSection = document.createElement("section");
+    ctaSection.className =
+      "text-white text-center max-w-2xl w-full"; // ✅ stays in center
+
+    // Heading
+    const heading = document.createElement("h2");
+    heading.className = "text-3xl md:text-4xl font-bold mb-4";
+    heading.textContent = "Give it a try, it's free!";
+    ctaSection.appendChild(heading);
+
+    // Subtext
+    const subText = document.createElement("p");
+    subText.className = "text-lg mb-6";
+    subText.textContent = "It only takes a few clicks to get started";
+    ctaSection.appendChild(subText);
+
+    // Button
+    const button = document.createElement("a");
+    button.href = "#";
+    button.className =
+      "bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition";
+    button.textContent = "Get started - it's free";
+    ctaSection.appendChild(button);
+
+    // Note
+    const note = document.createElement("p");
+    note.className = "text-sm text-gray-200 mt-4";
+    note.textContent = "✔ Free for 14 days, no credit card required.";
+    ctaSection.appendChild(note);
+
+    // Inject CTA into container
+    document.getElementById("cta-container").appendChild(ctaSection);
+  </script>
+</body>
+</html>
+<br>
